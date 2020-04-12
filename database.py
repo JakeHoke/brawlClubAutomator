@@ -34,7 +34,7 @@ class SQL_Server():
             for information in self.db[discord_id]:
                 if information['player_tag'] != None:
                     return information['player_tag']
-                return False
+            return False
         except Exception:
             return False
     
