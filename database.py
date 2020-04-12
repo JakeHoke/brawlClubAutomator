@@ -24,7 +24,7 @@ class SQL_Server():
         new_warning = self.return_userWarning(discord_id) + 1
         (self.db[discord_id]).update(dict(warn="yes", player_warning=new_warning), ['warn'])
 
-    def infomation_present(self, discord_id):
+    def information_present(self, discord_id):
         if not self.view_information_user(discord_id): 
             return False
         return True   

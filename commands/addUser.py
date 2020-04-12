@@ -38,7 +38,7 @@ class RegisterUser(BaseCommand):
 
         brawl_database = database.SQL_Server()
         user_name = str(message.author)
-        if user_name in brawl_database.return_allUsers():
+        if user_name in brawl_database.return_allUsers() and brawl_database.information_present(user_name):
             await client.send_message(message.channel,
                         "The User has already been linked to an account")
             return
