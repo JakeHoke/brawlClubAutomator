@@ -52,7 +52,7 @@ class RegulateServer(BaseEvent):
                     msg = " did not insert player information in database"
                     await client.send_message(warning_channel , member_object.mention + msg)
 
-                elif not brawl_database.infomation_present(member):
+                elif not brawl_database.information_present(member):
                     brawl_database.append_user_warning(member)
                     msg = " did not insert player information in database"
                     await client.send_message(warning_channel , member_object.mention + msg)
