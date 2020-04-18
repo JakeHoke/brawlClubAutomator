@@ -2,7 +2,7 @@ from commands.base_command  import BaseCommand
 from utils                  import get_emoji
 from random                 import randint
 import os, sys
-import database, brawlstats
+import database, brawlstats, configparser
 
 class RegisterUser(BaseCommand):
 
